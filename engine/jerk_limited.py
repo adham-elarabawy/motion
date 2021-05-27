@@ -88,7 +88,7 @@ class JerkLimited:
                     is_traj_computed = True
                 elif self.T_d < 0:
                     # Compute trajectory parameters with 3.29a, 3.29b
-                    self.T_d = 0 
+                    self.T_d = 0
                     self.T_a = 2 * (self.q1 - self.q0) / (self.v1 + self.v0)
                     self.T_j1 = (self.j_max * (self.q1 - self.q0) - np.sqrt(self.j_max * (self.j_max * (self.q1 - self.q0)**2 - (self.v1 + self.v0)**2 * (self.v1 - self.v0)))) / (self.j_max * (self.v1 + self.v0))
                     self.T_j2 = 0
