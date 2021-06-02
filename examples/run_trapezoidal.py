@@ -14,7 +14,7 @@ sns.color_palette("crest", as_cmap=True)
 sampling_res = 100
 
 # initialize and compute jerk limited trajectory
-tp_traj = Trapezoidal(0, 310, 0, 0, 95, 500)
+tp_traj = Trapezoidal(0, 10, 2.5, 0, 5, 10)
 
 # print relevant params
 print(f"T_a = {tp_traj.T_a}, T_d = {tp_traj.T_d}, T = {tp_traj.T}")

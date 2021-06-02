@@ -14,7 +14,7 @@ sns.color_palette("crest", as_cmap=True)
 sampling_res = 100
 
 # initialize and compute jerk limited trajectory
-jl_traj = JerkLimited(0, 310, 0, 0, 95, 500, 1000, alpha=0.99)
+jl_traj = JerkLimited(0, 10, 1, 0, 5, 10, 15, alpha=0.99)
 
 # print relevant params
 print(f"T_a = {jl_traj.T_a}, T_v = {jl_traj.T_v}, T_d = {jl_traj.T_d}, T_j1 = {jl_traj.T_j1}, T_j2 = {jl_traj.T_j2}, v_lim = {jl_traj.v_lim}, T = {jl_traj.T}")
