@@ -11,7 +11,7 @@ from engine.trapezoidal import Trapezoidal
 # visualization params
 sns.set_theme(style="darkgrid")
 sns.color_palette("crest", as_cmap=True)
-sampling_res = 100
+sampling_res = 1000
 
 # initialize and compute jerk limited trajectory
 tp_traj = Trapezoidal(0, 10, 2.5, 0, 5, 10)
