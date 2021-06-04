@@ -38,6 +38,7 @@ class JerkLimited:
         min_accel_reached = True
         if ((self.v_max - self.v0) * self.j_max) < pow(self.a_max, 2):
             max_accel_reached = False
+
         if ((self.v_max - self.v1) * self.j_max) < pow(self.a_max, 2):
             min_accel_reached = False
 
